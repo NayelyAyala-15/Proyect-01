@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<style>
+    body {
+    padding: 0 20px;
+}
+
+/*nav*/
+
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    /* separa izquierda y derecha */
+    align-items: center;
+    padding: 0 20px;
+    color: rgb(36, 124, 172);
+
+}
+
+.icono01 {
+    display: flex;
+    gap: 6px;
+    top: 10px;
+}
+
+nav ul {
+
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: block;
+
+}
+
+nav ul li a {
+    color: rgb(105, 104, 104);
+    text-decoration: none;
+
+    font-size: 20px;
+    transition: all .3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*header*/
+
+header {
+    background-color: rgb(202, 196, 196);
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.buscador input {
+    width: 450px;
+    padding: 5px 15px;
+
+
+
+}
+
+.buscador .boton01 {
+    padding: 5px 15px;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/*TABLA*/
+
+.titulo02 {
+    font-size: 18px;
+
+    display: flex;
+    gap: 8px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+}
+
+thead {
+    background-color: #1d4ed8;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+th {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.aplicar {
+    background-color: #22c55e;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+.container03 p {
+    text-align: center;
+    word-spacing: 2px;
+    /* separa palabras */
+    color: rgb(139, 137, 137);
+
+}
+</style>
+
+<body>
+
+    <!-- NAV - Barra de Navegación-->
+    <nav>
+        <div class="container">
+            <h1 class="icono01"><img src="iconos/iconoCode.svg" alt="">DevJobs</h1>
+            <ul>
+
+                <li><a href="index.html">Empresas</a></li>
+                <li><a href="portada.html">Blog</a></li>
+                <li><a href="practica.html">Login</a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+<!-- NAV - Barra de Navegación-->
+
+
+     <!--LINEA DE SEPARACION-->
+    <hr><br>
+     <!--LINEA DE SEPARACION-->
+
+
+     <!--HEADER-->
+    <header>
+        <h1>🚀 Encuentra a tu primer empleo TI</h1>
+        <p>Ofertas exclusivas para Juniors y Trainners en Perú.</p>
+
+        <div class="buscador">
+            <input type="text" placeholder="Ej. Desarrollador Java">
+            <button class="boton01"><img src="iconos/lupa.svg" alt=""> Buscar</button>
+        </div>
+    </header><br>
+     <!--HEADER-->
+
+     <!--LINEA DE SEPARACION-->
+    <hr><br>
+     <!--LINEA DE SEPARACION-->
+
+    <!--TABLA-->
+    <!--MAIN-->
+    <main>
+        <h3 class="titulo02">
+            <img src="iconos/empleo.svg" alt="">
+            Ultimas Ofertas Publicadas</h3>
+        <table border="1">
+            <thead>
+
+                <tr>
+                    <th>Fecha</th>
+                    <th>Puesto</th>
+                    <th>Empresa</th>
+                    <th>Modalidad</th>
+                    <th>Accion</th>
+                </tr>
+
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Hace 2h</td>
+                    <td>Frontend Developer Trainee<br>HTML, CSS ,JavaScript</td>
+                    <td>TechSolutions SAC</td>
+                    <td>🏠 Remoto</td>
+                    <td><a href="ficha.html" class="aplicar">Aplicar</a></td>
+                </tr>
+
+                <tr>
+                    <td>Ayer</td>
+                    <td>Soporte Tecnico L1 <br>Mantenimiento de PC y Redes</td>
+                    <td>Banco BCP</td>
+                    <td> 🏢 Presencial</td>
+                    <td><a href="ficha.html" class="aplicar">Aplicar</a></td>
+                </tr>
+
+                <tr>
+                    <td>Hace 2 dias</td>
+                    <td>Practicante .NTE / C#</td>
+                    <td>SoftwareOne</td>
+                    <td>🏠 Hibrido</td>
+                    <td><a href="ficha.html" class="aplicar">Aplicar</a></td>
+                </tr>
+            </tbody>
+
+
+        </table>
+    </main><br><br>
+     <!--MAIN-->
+
+    <!--LINEA DE SEPARACION-->
+    <hr><br>
+     <!--LINEA DE SEPARACION-->
+
+
+    <!--FOOTER-->
+    <footer class="container03">
+        <p>&copy; 2026 DevJobs Perú - Hecho por Nayely </p>
+    </footer>
+     <!--FOOTER-->
+
+</body>
+
+</html>
